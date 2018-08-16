@@ -157,7 +157,7 @@ class Main:
         print("-----------------------------------------")
         sorted_score = sorted(self.score_board, key=self.get_key, reverse=True)
         loop = 0
-        while loop < len(sorted_score) and loop <= 5:
+        while loop < len(sorted_score) and loop < 5:
             print("%r. %r, score: %r" % ((loop + 1), sorted_score[loop][1], sorted_score[loop][2]))
             loop += 1
         print("-----------------------------------------")
